@@ -1,35 +1,34 @@
-# ESP32-drone-Stabilation-Mode-V1.0
+# ESP32-Drone-Stabilation-Mode-V1.0
 
 ## Overview
-This project implements **Angle Mode** and **Rate Mode** for an ESP32-based drone using an **MPU6050 IMU** (Gyroscope & Accelerometer). The stabilization algorithm ensures smooth and controlled flight dynamics.
+This project implements **Angle Mode + Rate Mode** using the IMU's (**MPU6050**) Gyroscope and Accelerometer for drone stabilization. The code is available on the **postery**, and a demonstration video is available on Facebook: [Video Link](https://www.facebook.com/share/p/153RfBXNjC/).
 
 ## Features
-✅ **Angle Mode** (Self-Leveling) - Uses the accelerometer for automatic leveling.
-✅ **Rate Mode** (Acro Mode) - Uses only the gyroscope for direct control.
-✅ **PID Control** - Fine-tuned stabilization system.
-✅ **ESP32 Integration** - Lightweight and optimized for real-time control.
+- **Angle Mode**: Uses accelerometer and gyroscope data for stable flight.
+- **Rate Mode**: Uses gyroscope data only for acrobatic maneuvers.
+- **PID Control**: Implements a **PID loop** for precise stabilization.
+- **ESP32-S3-Zero**: Handles sensor fusion and motor control.
 
-## Components Used
-- **ESP32-S3-Zero** (Main Flight Controller)
-- **MPU6050** (IMU Sensor for attitude estimation)
-- **NRF24L01** (Wireless communication)
-- **Brushless Motors + ESCs**
-- **LiPo Battery (3S/4S)**
+## Transmitter
+The transmitter code is available in the following repository: [Radio Transmitter and Receiver](https://github.com/ghaithmhamd/Radio-transmitter-and-reciever)
 
-## Installation & Usage
-1. **Flash the Code**: The full source code is available on the **Postery** platform.
-2. **Connect the Hardware**: Ensure proper wiring between ESP32, MPU6050, and motors.
-3. **Tune PID Parameters**: Adjust `Kp, Ki, Kd` for best stability.
-4. **Test Flight**: Gradually increase throttle and observe stability.
+## Hardware Requirements
+- **ESP32-S3-Zero** (Main flight controller)
+- **MPU6050** (IMU sensor)
+- **NRF24L01** (Wireless communication module)
+- **Brushless Motors & ESCs**
+- **Battery & Power Distribution Board**
 
-## Demo Video 🎥
-Watch the flight test here: [Facebook Video](https://www.facebook.com/share/p/153RfBXNjC/)
+## Installation & Setup
+1. Clone the repository.
+2. Upload the code to your **ESP32-S3-Zero** using **Arduino IDE**.
+3. Ensure proper sensor calibration before flight.
+4. Connect the transmitter (linked above) and test the response.
 
-## Future Improvements
-🔹 Altitude Hold Mode (using **BMP280**)
-🔹 GPS Waypoint Navigation
-🔹 Optical Flow for Indoor Stability
+## Notes
+- Ensure that the **IMU is properly mounted** to avoid drift.
+- The **PID parameters** might need tuning based on your drone's configuration.
 
----
-📌 **Contributions & Feedback** are welcome! Let’s make open-source drone control even better. 🚀
+## License
+This project is open-source. Feel free to contribute and improve it! ✈️
 
