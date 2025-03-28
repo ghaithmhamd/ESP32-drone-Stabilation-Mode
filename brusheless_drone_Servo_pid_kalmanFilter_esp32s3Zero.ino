@@ -1,3 +1,5 @@
+//thanks to https://github.com/CarbonAeronautics for his resources
+//project created by https://github.com/ghaithmhamd 28/03/2025
 #include <Wire.h>
 #include <SPI.h>           
 #include <nRF24L01.h>
