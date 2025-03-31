@@ -29,6 +29,10 @@ The transmitter code is available in the following repository: [Radio Transmitte
 - Ensure that the **IMU is properly mounted** to avoid drift.
 - The **PID parameters** might need tuning based on your drone's configuration.
 
+## References
+- [pratikphadte](https://www.youtube.com/@pratikphadte) 
+- [Carbon Aeronautics](https://youtube.com/@carbonaeronautics?si=-DZ1Sz5sgNruoJgR)
+
 ## License
 This project is open-source. Feel free to contribute and improve it! ✈️
 
